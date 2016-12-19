@@ -1,0 +1,13 @@
+image: docker:latest
+services:
+    - docker:dind
+
+stages:
+    - verify
+
+verify:
+    stage: verify
+    image: node:6.3
+    script:
+        - npm install
+        - npm test
