@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
-    "test": "ng test --singleRun=true --browsers=PhantomJS",
+    "test": "ng test --singleRun=true --progress=false --browsers=PhantomJS --code-coverage",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
   },
