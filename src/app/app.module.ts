@@ -11,10 +11,13 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    MaterialModule.forRoot(),
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule.forRoot(),
+  ],
+  exports: [
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
